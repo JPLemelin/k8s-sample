@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: firstapp-pod
+  labels:
+    app: firstapp
+spec:
+  containers:
+  - name: helloworld-app
+    image: jplemelin/helloworld-app:v1
+    ports:
+    - name: nodejs-port
+      containerPort: 3000
