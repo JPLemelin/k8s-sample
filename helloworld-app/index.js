@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
-  res.send('Hello World! (v1)');
+  res.send('Hello World! (v2)');
 });
 
 var server = app.listen(3000, function () {
