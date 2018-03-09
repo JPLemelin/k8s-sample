@@ -1,6 +1,6 @@
 FROM node:8-alpine
 
-MAINTAINER Jean-Philippe Lemelin
+LABEL maintainer="Jean-Philippe Lemelin"
 
 EXPOSE 3000
 
