@@ -64,9 +64,8 @@ kubectl exec helloworld-nginx -c nginx -- cat /etc/nginx/conf.d/reverseproxy.con
 ```
 
 We can modified `configmap` and the file in container of pod will be updated.
-Modify the `reverseproxy.conf`, then
 ```
-kubectl create configmap nginx-config --from-file=reverseproxy.conf -o yaml --dry-run  | kubectl apply -f -
+kubectl edit configmap nginx-config
 ```
 
 Let time to rollout, then:
